@@ -8,7 +8,7 @@
 # Don't forget to import your class
 import pygame
 pygame.init()
-
+from logo import Logo
 # Define some colours
 # Colours are defined using RGB values
 BLACK = (0, 0, 0)
@@ -43,7 +43,13 @@ while carryOn:
     # There should be none for a static image
     
     # --- Draw code goes here
-
+    logo1 = Logo(60, 80, random.randint(50,100))
+    logo1.rect.x = 60
+    logo1.rect.y = -100
+ 
+    car2 = Car(YELLOW, 60, 80, random.randint(50,100))
+    car2.rect.x = 160
+    car2.rect.y = -600
     # Clear the screen to white
     screen.fill(WHITE)
 
