@@ -1,4 +1,4 @@
-# ICS3U
+            # ICS3U
 # Assignment 2: Logo
 # <Noah Turner>
 
@@ -18,15 +18,14 @@ BLUE = (43, 114, 229)
 
 class Logo(pygame.sprite.Sprite):
 
-    def __init__(self, color, width, height, speed):
+    def __init__(self, width, height, speed):
         super().__init__()
 
         self.image = pygame.Surface([width, height])
         self.width=width
         self.height=height
-        self.color = color
         self.speed = speed
-    def __init__(self, color, width, height, speed):
+    def __init__(self, width, height, speed):
         super().__init__()
 # Set the screen size (please don't change this)
 SCREENWIDTH = 400
